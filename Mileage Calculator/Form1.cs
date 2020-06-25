@@ -29,20 +29,24 @@ namespace Mileage_Calculator
             endingMileage = (int)numericUpDown2.Value;
             if (startingMileage >= endingMileage)
             {
-                MessageBox.Show("Cannot Calculate Mileage", "The Starting mileage must be less then the ending mileage");
+                MessageBox.Show("The Starting mileage must be less then the ending mileage", "Cannot Calculate Mileage");
             }
             else
             {
                 milesTraveled = endingMileage - startingMileage;
                 amountOwed = milesTraveled * reimbursedRate;
                 label4.Text = "$" + amountOwed;
+
             }
 
 
         }
 
-
-
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int drivenMiles;
+            drivenMiles = (int)numericUpDown2.Value - (int)numericUpDown1.Value;
+            MessageBox.Show(drivenMiles + " miles this trip", "Miles Traveled");
+        }
     }
 }
