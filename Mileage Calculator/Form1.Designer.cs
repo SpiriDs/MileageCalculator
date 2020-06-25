@@ -72,9 +72,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(225, 110);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 22);
+            this.label4.Size = new System.Drawing.Size(21, 22);
             this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
+            this.label4.Text = "$";
             // 
             // CalculateButton
             // 
@@ -84,6 +84,7 @@
             this.CalculateButton.TabIndex = 6;
             this.CalculateButton.Text = "Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
+            this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // numericUpDown1
             // 
