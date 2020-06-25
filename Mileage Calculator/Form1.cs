@@ -15,7 +15,7 @@ namespace Mileage_Calculator
         int startingMileage;
         int endingMileage;
         double milesTraveled;
-        double reimbursedRate = 0.39;
+        readonly double reimbursedRate = 0.39;
         double amountOwed;
 
         public Form1()
@@ -42,7 +42,7 @@ namespace Mileage_Calculator
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             int drivenMiles;
             drivenMiles = (int)numericUpDown2.Value - (int)numericUpDown1.Value;
